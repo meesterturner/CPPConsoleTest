@@ -6,7 +6,12 @@
 void MathsShiz::generateSecretNumber()
 {
 	srand(time(NULL));
-	secretNumber = rand() % 99;
+	secretNumber = -1;
+
+	while (secretNumber < 1 || secretNumber > 100)
+	{
+		secretNumber = rand() % 99;
+	}
 }
 
 GuessResult MathsShiz::testGuess(int guess)

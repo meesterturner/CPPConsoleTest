@@ -4,23 +4,28 @@
 #include <iostream>
 #include "Maths.h"
 #include "Enums.h"
+#include "Locale.h"
+#include <map>
+
+
 
 
 int main()
 {
-    MathsShiz maths;
-    maths.generateSecretNumber();
+    MathsShiz maths;    
     GuessResult lastResult;
+    Locale locale;
 
+    maths.generateSecretNumber();
     lastResult = GuessResult::None;
 
-    printf("I have thought of a number between 1 and 100!\n\n");
+    printf("%s\n\n", locale.getLocalisedString("Thought"));
 
     while (lastResult != GuessResult::JustRight)
     {
         int myGuess;
 
-        printf("What number am I thinking of? ");
+        printf("%s ", locale.getLocalisedString("Question"));
         scanf_s("%d", &myGuess);
         
         lastResult = maths.testGuess(myGuess);
@@ -28,17 +33,17 @@ int main()
         switch (lastResult)
         {
         case GuessResult::TooHigh:
-            printf("\nYour guess was too high\n");
+            printf("\n%s\n", locale.getLocalisedString("TooHigh"));
             break;
 
         case GuessResult::TooLow:
-            printf("\nYour guess was too low\n");
+            printf("\n%s\n", locale.getLocalisedString("TooLow"));
             break;
 
         }
     }
 
-    printf("\nCONGRATULATIONS! Your guess was juuuuust right! It was %d\n", maths.getSecretNumber());
+    printf("\n%s %d\n", locale.getLocalisedString("JustRight"), maths.getSecretNumber());
 
     return 0;
 }
