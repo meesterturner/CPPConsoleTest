@@ -13,4 +13,5 @@ public:
 
 private:
 	map<string, string> localeDictionary;
+	void loadLocale();
 };

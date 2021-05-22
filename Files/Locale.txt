@@ -1,0 +1,5 @@
+Thought|Arrgh! I have thought of a number between 1 and 100!
+Question|Jim lad... What number am I thinking of?
+TooHigh|Alas, your guess was too high
+TooLow|Me heartie, your guess was too low
+JustRight|Crack open the rum! Your guess was juuuuust right! It was 
