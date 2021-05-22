@@ -1,6 +1,6 @@
 #pragma once
+#include "Enums.h"
 
-enum class GuessResult;
 class MathsShiz
 {
 public:
