@@ -3,7 +3,7 @@
 #include "Maths.h"
 #include "Enums.h"
 
-void MathsShiz::generateSecretNumber()
+void Maths::generateSecretNumber()
 {
 	srand(time(NULL));
 	secretNumber = -1;
@@ -14,7 +14,7 @@ void MathsShiz::generateSecretNumber()
 	}
 }
 
-GuessResult MathsShiz::testGuess(int guess)
+GuessResult Maths::testGuess(int guess)
 {
 	GuessResult retVal = GuessResult::JustRight;
 
@@ -30,7 +30,7 @@ GuessResult MathsShiz::testGuess(int guess)
 	return retVal;
 }
 
-int MathsShiz::getSecretNumber()
+int Maths::getSecretNumber()
 {
 	return secretNumber;
 }

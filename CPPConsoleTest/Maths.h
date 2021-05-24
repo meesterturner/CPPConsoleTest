@@ -1,7 +1,7 @@
 #pragma once
 #include "Enums.h"
 
-class MathsShiz
+class Maths
 {
 public:
 	void generateSecretNumber();

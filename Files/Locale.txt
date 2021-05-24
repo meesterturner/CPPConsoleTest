@@ -1,5 +1,7 @@
-Thought|Arrgh! I have thought of a number between 1 and 100!
-Question|Jim lad... What number am I thinking of?
-TooHigh|Alas, your guess was too high
-TooLow|Me heartie, your guess was too low
-JustRight|Crack open the rum! Your guess was juuuuust right! It was 
+Thought|I have thought of a number between 1 and 100!
+Question|What number am I thinking of?
+TooHigh|Nope, too high
+TooLow|Nope, too low
+JustRight|Your guess was juuuuust right! It was 
+EnterScore|You're on the best score table - Please enter your name: 
+PlayAgain|Play again? Y/N: 

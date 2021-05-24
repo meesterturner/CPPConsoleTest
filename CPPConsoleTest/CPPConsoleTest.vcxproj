@@ -146,12 +146,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CPPConsoleTest.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="HiScores.cpp" />
     <ClCompile Include="Locale.cpp" />
     <ClCompile Include="Maths.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enums.h" />
+    <ClInclude Include="HiScores.h" />
     <ClInclude Include="Locale.h" />
     <ClInclude Include="Maths.h" />
   </ItemGroup>
