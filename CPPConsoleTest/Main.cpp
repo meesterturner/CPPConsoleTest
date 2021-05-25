@@ -22,6 +22,9 @@ int main()
     int guesses;
     bool bored = false;
 
+    printf("DLL Test: %d\n\n", maths.lowerTest());
+    string temp;
+    cin >> temp;
 
     while (!bored)
     {

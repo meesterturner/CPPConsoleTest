@@ -36,7 +36,7 @@ void HiScores::addScore(int score)
 	cin >> name;
 
 	// Get position in table
-	int pos = -1;
+	int pos = 0;
 	for (int i = 0; i <= 3; i++)
 	{
 		if (score < scores[i])
@@ -54,8 +54,11 @@ void HiScores::addScore(int score)
 	}
 
 	// Insert
-	scores[pos] = score;
-	names[pos] = name;
+	if (pos <= 3) {
+		scores[pos] = score;
+		names[pos] = name;
+	}
+	
 }
 
 void HiScores::showScores()

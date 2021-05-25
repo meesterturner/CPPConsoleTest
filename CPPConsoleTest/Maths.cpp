@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "Maths.h"
 #include "Enums.h"
+#include "TestDLL.h"
 
 void Maths::generateSecretNumber()
 {
@@ -33,5 +34,10 @@ GuessResult Maths::testGuess(int guess)
 int Maths::getSecretNumber()
 {
 	return secretNumber;
+}
+
+int Maths::lowerTest()
+{
+	return isLower(50, 100);
 }
 
